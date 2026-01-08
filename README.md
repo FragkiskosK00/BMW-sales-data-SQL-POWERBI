@@ -60,3 +60,8 @@ CSV → SQL Server → Star Schema → Power BI
 - Fact & dimension design
 - SQL transformations
 - BI visualization best practices
+
+## Important notices
+-  Update database name if needed
+- Update CSV file path before running BULK INSERT
+- No credentials are required
