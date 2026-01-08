@@ -72,7 +72,7 @@ CREATE TABLE staging_bmw ( --Δημιουργία άλλου πίνακα για
 --Εισαγωγή αρχείου CSV και επεξεργασία
 
 BULK INSERT staging_bmw --η μέθοδος task import data δεν μου δούλεψε οπότε έκανα bulk insert το csv αρχείο στον επεξεργάσιμο πίνακα αρχικά
-FROM 'C:\Users\fragi\Desktop\BMW sales data (2010-2024) (1).csv'
+FROM 'C:\Users\HERE_PLACE_YOUR_COMPUTER_NAME\Desktop\BMW sales data (2010-2024) (1).csv'
 WITH (
     FORMAT='CSV',
     FIRSTROW = 2, --Προσπερνάει την πρώτη γραμμή καθώς περιέχει τους τίτλους των fields
@@ -173,3 +173,4 @@ ALTER COLUMN engine_size_L DECIMAL(3,1); --Ορίζω εως 3 ψηφία συν
 SELECT DISTINCT Sales_Classification
 FROM staging_bmw
 ORDER BY Sales_Classification;
+
